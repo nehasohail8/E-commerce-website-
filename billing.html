@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billing Information</title>
+    <link rel="stylesheet" href="bill_style.css" type = "text/css"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+
+<body> 
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                
+                <img src="2020-12-18 (4).png" width="125px">
+            </div>
+        
+        <nav>
+            <ul id="MenuItems" >
+               
+                <li><img src="clipart2708001.png" width="20px" height="20px"></li>
+                <li><img src="clipart365828.png" class="menu icon" onclick="menutoggle()" width="20px" height="20px"></li>
+
+            </ul>
+        </nav>
+
+         <div>
+            <div class="wrap">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="What are you looking for...?">
+                   <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                     <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" width="23px">
+                  </button>
+                </div>
+             </div>
+         </div>
+    </div>
+
+    </div>
+
+    <div class="scrollmenu">
+        
+      
+        <div class="w3-bar w3-darkgrey">
+            <a href="User.html" class="w3-bar-item w3-button">Profile</a>
+            <a href="index.html" class="w3-bar-item w3-button">Log out</a>
+            
+            <a href="nav.html" class="w3-bar-item w3-button">Contact Us</a>
+            <a href="items.html" class="w3-bar-item w3-button">Brands</a>
+           
+           
+  
+            <div class="w3-dropdown-hover">
+              <button class="w3-button w3-darkgrey">Bedroom</button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="items.html" class="w3-bar-item w3-button">Bed spread</a>
+                <a href="items.html" class="w3-bar-item w3-button">Cushion and covers</a>
+                <a href="items.html" class="w3-bar-item w3-button">Bed covers</a>
+              </div>
+            </div>
+          
+  
+         
+            <div class="w3-dropdown-hover">
+              <button class="w3-button">Lounge</button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="items.html" class="w3-bar-item w3-button">Accent chairs</a>
+                <a href="items.html" class="w3-bar-item w3-button">Sofa</a>
+                <a href="items.html" class="w3-bar-item w3-button">Coffee tables</a>
+              </div>
+            </div>
+          
+    
+    
+    
+         
+            <div class="w3-dropdown-hover">
+              <button class="w3-button">Bathroom</button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4r">
+                <a href="items.html" class="w3-bar-item w3-button">Towels</a>
+                <a href="items.html" class="w3-bar-item w3-button">Showering essentials</a>
+                <a href="items.html" class="w3-bar-item w3-button">creams and gels</a>
+              </div>
+            </div>
+          
+    
+          
+            <div class="w3-dropdown-hover">
+              <button class="w3-button">Kitchen</button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="items.html" class="w3-bar-item w3-button">Table cloth</a>
+                <a href="items.html" class="w3-bar-item w3-button">Canister and jars</a>
+                <a href="items.html" class="w3-bar-item w3-button">Plates and platters</a>
+              </div>
+            </div>
+  
+            <div class="cart">
+               <a href="billing.html"> <button style="font-size:15px; background-color: #49494a; color: white;"> Add to cart <i class="fa fa-shopping-cart"></i></button></a>
+              </div>
+         
+    
+       
+  </div>
+  
+  
+  
+  </div>
+
+    <div class="main">
+
+        <h1>Billing Cart</h1>
+        
+        <table>
+            <tr class="row_">
+            <th>Product</th>
+            <th class="one">Quantity</th>
+            <th class="two">Subtotal</th>
+
+        </tr>
+
+        <tr class="row1">
+
+            <td class="row_"><img src="set.jpg" alt="KitchenSet" class="img"><br><br><p>Ocean Blue Kitchen Set</p></td>
+            <td class="one"><input type="number"></td>
+            <td class="two">$60.00</td>
+
+        </tr>
+
+        <tr class="row2">
+
+            <td class="row_"><img src="sofa.jpg" alt="Sofa" class="img"><br><br><p>Aqua Blue Luxury Sofa</p></td>
+            <td class="one"><input type="number"></td>
+            <td class="two">$1500.00</td>
+
+        </tr>
+
+        <tr class="row2">
+
+            <td class="row_"><img src="bedcover.jpg" alt="bedcover" class="img"><br><br><p>Jet Black Bed Cover</p></td>
+            <td class="one"><input type="number"></td>
+            <td class="two">$100.00</td>
+
+
+        </tr>
+
+        <tr class="row2">
+
+            <td class="row_"><img src="kit.jpg" alt="ShowerKit" class="img"><br><br><p>Malako Showering Kit </p></td>
+            <td class="one"><input type="number"></td>
+            <td class="two">$75.00</td>
+
+
+        </tr>
+
+            
+        <tr class="row2">
+            
+            <td class= "total"><b>Total: $1735.00</b> </td>
+        </tr>
+
+        </table>
+
+        <div class="final">
+
+            <select name="pay" id="pay" class="slct">
+
+                <option value="COD">Cash on Delivery</option>
+                <option value="Credit Card">Credit Card</option>
+
+            </select>
+
+            <p class="txt">*Order will be delivered <br> within 5-10 working days</p>
+
+            <a href="nav.html"><button type="button" class="btn"> Proceed to Checkout &#8594;</button></a>
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                <p>Download for android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="https://www.sysdata.it/wp-content/uploads/2020/01/download-on-app-store-png-apple-and-the-apple-logo-are-trademarks-of-apple-inc-registered-in-the-u-s-and-other-countries-app-store-is-a-service-mark-of-apple-inc-android-565.png">
+                    <img src="https://lh3.googleusercontent.com/_lJlz59m3wsdd0aqpUW7QZro5VTv0sLC38yiz5NFQr_12JurH4BEkSuiSjGjNn_xKRwoC--c4wrR8hZ7VT8XN4evhM9xmMBq0bAKtQ">
+                    
+                    
+                </div>
+                <div class="app-name">
+                    <img src="https://i.pinimg.com/564x/91/62/a6/9162a62aee33b33791915fcb2a51a70d.jpg">
+                    <img src="https://i.pinimg.com/564x/59/c5/07/59c5077a1f11532001bc5a60fa7fd10c.jpg">
+                    <img src="https://i.pinimg.com/564x/e2/a2/bc/e2a2bcc32cdb6b8b62444dec24bb0a65.jpg">
+                    
+    
+                </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Company info</h3>
+                    <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy policy</li>
+                </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Categories</h3>
+                    <ul>
+    
+                        <li>Lounge</li>
+                    <li>Bedroom</li>
+                    <li>Kitchen</li>
+                    <li>Bathroom</li>
+    
+    
+                    </ul>
+                    
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+    
+                        <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    
+    
+    
+                    </ul>
+                    
+                </div
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+
+</body>
+
+</html>
